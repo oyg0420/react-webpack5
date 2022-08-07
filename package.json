@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --config config/webpack.dev.js",
     "prod": "webpack-dev-server --config config/webpack.prod.js",
     "build:dev": "webpack --config config/webpack.dev.js",
-    "build:prod": "webpack --config config/webpack.prod.js"
+    "build:prod": "webpack --config config/webpack.prod.js",
+    "build:report": "webpack-bundle-analyzer --port 8888 dist/bundle-stats.json"
   },
   "dependencies": {
     "react": "^18.2.0",
